@@ -15,21 +15,25 @@ with open('sort_csv/fitness_pose_samples.csv', mode ='r')as file:
         
         if line[1]=='pushups_up':
              line[0]=f"sample_{count1:0>5}"
+             line.pop(1)
              pushups_up.append(line) 
              count1 += 1
 
         elif line[1]=='pushups_down':
              line[0]=f"sample_{count2:0>5}"
+             line.pop(1)
              pushups_down.append(line) 
              count2 += 1
 
         elif line[1]=='squats_up':
              line[0]=f"sample_{count3:0>5}"
+             line.pop(1)   
              squats_up.append(line) 
              count3 += 1
 
         elif line[1]=='squats_down':
              line[0]=f"sample_{count4:0>5}"
+             line.pop(1)
              squats_down.append(line) 
              count4 += 1        
         
